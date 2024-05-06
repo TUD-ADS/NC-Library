@@ -1,0 +1,19 @@
+/**
+ * Copyright 2024 The NC-Library Authors. All rights reserved.
+ *
+ * Licensed under Apache License Version 2.0.
+ *
+ */
+#include <cstdlib>
+#include <iostream>
+#include <sstream>
+
+/**
+ * This file is just a wrapper to have a proper CMake target with executable.
+ */
+
+int main(int argc, char** argv)
+{
+    system("cd ${CMAKE_CURRENT_SOURCE_DIR} && ./run_all_tests.sh ${test_targets_list}");
+    return 0;
+}
