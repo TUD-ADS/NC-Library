@@ -101,7 +101,7 @@ int sc_main(int argc, char** argv) {
   } catch (sc_report& report) {
     std::cout << "Caught report: " << report.get_msg() << std::endl;
     sc_assert(!strcmp(report.get_msg(),
-                      "\n signal `t1.listener.module1.signal_0' (sc_signal)"
+                      "\n signal `t1.listener.module1_0.signal_0' (sc_signal)"
                       "\n first driver `t1.listener.verify.drive_outputs_0' "
                       "(sc_method_process)"
                       "\n second driver `t1.listener.verify.drive_outputs_0_1' "
