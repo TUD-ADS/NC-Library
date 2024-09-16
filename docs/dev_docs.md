@@ -21,6 +21,10 @@ Directory `locking` contains the `reconf_lock`, which enables adapters to block 
 At last, directory `forwarding` contains the currently available member adapters and the `adapter_traits` structs used to select them.
 Furthermore, provides the struct `nc_decouple_value` the correct value that should be set on ports when no module is configured.
 
+# Running the tests
+
+Build the project with, navigate to the build directory and run `ctest`, `make test` or `ninja test`, depending on which build system you use.
+
 # Current Limitations/Open Issues
 The existing macros in `nc_interface.h` currently only support up to 10 interface members.
 These should be extended to support up to 50 members.
